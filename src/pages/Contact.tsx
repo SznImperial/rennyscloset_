@@ -58,10 +58,15 @@ export default function Contact() {
               </div>
               
               <div className="pt-4">
-                <button className="bg-brand-ink text-brand-beige px-16 py-6 font-bold tracking-[0.3em] flex items-center justify-center gap-4 hover:bg-brand-muted transition-all uppercase w-full md:w-auto">
+                <a
+                  href="https://wa.me/2348082970079?text=Hi%20Renny's%20Closet!%20%F0%9F%91%8B%0A%0AI'd%20like%20to%20place%20an%20order.%20Could%20you%20share%20what's%20currently%20available%3F%20Thank%20you!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-brand-ink text-brand-beige text-[11px] md:text-[13px] px-8 md:px-16 py-4 md:py-6 font-bold tracking-[0.2em] md:tracking-[0.3em] flex items-center justify-center gap-3 md:gap-4 hover:bg-brand-muted transition-all uppercase w-full md:w-auto no-underline"
+                >
                   DM TO ORDER
                   <Send className="w-5 h-5 stroke-[1.5px]" />
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>
@@ -78,13 +83,13 @@ export default function Contact() {
           <div className="flex flex-col gap-3">
             <span className="text-[10px] font-bold tracking-[0.4em] text-brand-ink/40 uppercase">Location</span>
             <p className="text-[14px] font-medium text-brand-muted leading-loose">
-              Victoria Island,<br />Lagos, Nigeria
+              Igando,<br />Lagos, Nigeria
             </p>
           </div>
           <div className="flex flex-col gap-3">
             <span className="text-[10px] font-bold tracking-[0.4em] text-brand-ink/40 uppercase">Inquiries</span>
             <p className="text-[14px] font-medium text-brand-muted leading-loose">
-              hello@rennyscloset.com
+              rennyscloset1206@gmail.com
             </p>
           </div>
         </div>

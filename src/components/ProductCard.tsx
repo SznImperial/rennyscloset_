@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Product } from '../types';
 
 interface ProductCardProps {
+  key?: React.Key;
   product: Product;
   className?: string;
   showButton?: boolean;
@@ -45,10 +46,15 @@ export default function ProductCard({ product, className = "", showButton = true
         )}
         
         {showButton && (
-          <button className="mt-4 py-3 px-6 bg-brand-ink text-brand-beige text-[11px] font-bold tracking-[0.2em] inline-flex items-center justify-center gap-3 self-start transition-all hover:bg-brand-muted active:scale-95 uppercase">
+          <a
+            href={`https://wa.me/2348082970079?text=${encodeURIComponent(`Hi Renny's Closet! 👋\n\nI'm interested in ordering the *${product.name}*${product.price ? ` (${product.price})` : ''}.\n\nPlease let me know about available sizes and delivery options. Thank you!`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 py-2.5 md:py-3 px-5 md:px-6 bg-brand-ink text-brand-beige text-[10px] md:text-[11px] font-bold tracking-[0.15em] md:tracking-[0.2em] inline-flex items-center justify-center gap-2 md:gap-3 w-full md:w-auto self-start transition-all hover:bg-brand-muted active:scale-95 uppercase no-underline"
+          >
             <MessageSquare className="w-4 h-4 fill-current" />
             DM TO ORDER
-          </button>
+          </a>
         )}
       </div>
     </motion.article>

@@ -44,7 +44,7 @@ export default function Footer({ setPage }: FooterProps) {
           <button className="hover:text-brand-ink transition-colors">
             <Globe className="w-5 h-5 stroke-[1.5px]" />
           </button>
-          <a href="mailto:hello@rennyscloset.com" className="hover:text-brand-ink transition-colors">
+          <a href="mailto:rennyscloset1206@gmail.com" className="hover:text-brand-ink transition-colors">
             <Mail className="w-5 h-5 stroke-[1.5px]" />
           </a>
         </div>

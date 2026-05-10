@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, ShoppingBag, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Page } from '../types';
 
 interface HeaderProps {
@@ -64,11 +64,7 @@ export default function Header({ currentPage, setPage }: HeaderProps) {
             ))}
           </nav>
 
-          <div className="flex items-center z-50">
-            <button className="p-2 -mr-2 hover:opacity-60 transition-opacity">
-              <ShoppingBag className="w-6 h-6 stroke-[1.5px]" />
-            </button>
-          </div>
+
         </div>
       </header>
 

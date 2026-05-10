@@ -1,4 +1,4 @@
-import { Mail } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
         <motion.div 
           initial={{ width: 0 }}
           animate={{ width: 64 }}
-          className="h-[1px] bg-brand-ink/40"
+          className="h-px bg-brand-ink/40"
         />
       </header>
 
@@ -29,7 +29,7 @@ export default function About() {
           <img 
             src="/images/about-editorial.png" 
             alt="Editorial Story"
-            className="w-full h-auto aspect-[3/4] object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-1000"
+            className="w-full h-auto aspect-3/4 object-cover grayscale-20 hover:grayscale-0 transition-all duration-1000"
           />
         </motion.div>
 
@@ -58,14 +58,17 @@ export default function About() {
           </div>
         </section>
 
-        <motion.button 
+        <motion.a
+          href="https://wa.me/2348082970079?text=Hi%20Renny's%20Closet!%20%F0%9F%91%8B%0A%0AI'd%20love%20to%20learn%20more%20about%20your%20collection.%20Thank%20you!"
+          target="_blank"
+          rel="noopener noreferrer"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="bg-brand-ink text-brand-beige font-bold tracking-[0.3em] px-16 py-6 flex items-center gap-4 hover:bg-brand-muted transition-colors uppercase"
+          className="bg-brand-ink text-brand-beige text-[11px] md:text-[13px] font-bold tracking-[0.2em] md:tracking-[0.3em] w-full md:w-auto px-8 md:px-16 py-4 md:py-6 flex items-center justify-center gap-3 md:gap-4 hover:bg-brand-muted transition-colors uppercase no-underline"
         >
-          <Mail className="w-5 h-5 stroke-[1.5px]" />
+          <MessageSquare className="w-5 h-5 stroke-[1.5px]" />
           Connect with us
-        </motion.button>
+        </motion.a>
       </article>
     </main>
   );

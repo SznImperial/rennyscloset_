@@ -46,7 +46,7 @@ export default function Home({ setPage }: HomeProps) {
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
             onClick={() => setPage('collection')}
-            className="min-w-[240px] h-14 border border-brand-beige text-brand-beige font-bold tracking-[0.3em] uppercase hover:bg-brand-beige hover:text-brand-ink transition-all duration-300 backdrop-blur-sm"
+            className="w-full max-w-[280px] md:max-w-none md:min-w-[280px] h-12 md:h-14 text-[10px] md:text-[12px] border border-brand-beige text-brand-beige font-bold tracking-[0.2em] md:tracking-[0.3em] uppercase hover:bg-brand-beige hover:text-brand-ink transition-all duration-300 backdrop-blur-sm px-6 md:px-10"
           >
             Shop the collection
           </motion.button>
@@ -113,7 +113,7 @@ export default function Home({ setPage }: HomeProps) {
               placeholder="YOUR EMAIL ADDRESS"
               type="email"
             />
-            <button className="text-[11px] font-bold tracking-[0.4em] text-brand-beige border border-brand-beige/30 px-12 py-4 hover:bg-brand-beige hover:text-brand-ink transition-all uppercase whitespace-nowrap">
+            <button className="text-[10px] md:text-[11px] font-bold tracking-[0.2em] md:tracking-[0.4em] text-brand-beige border border-brand-beige/30 w-full md:w-auto px-8 md:px-12 py-3.5 md:py-4 hover:bg-brand-beige hover:text-brand-ink transition-all uppercase whitespace-nowrap">
               Subscribe
             </button>
           </form>
